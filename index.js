@@ -3,7 +3,7 @@ require('dotenv').config();
 const prompts = require('prompts');
 const setup = require('./setup');
 const download = require('./download');
-const calculateSize = require('./calculateSize');
+const { calculateSize } = require('./utils');
 
 (async () => {
     const { runSetup } = await prompts({
